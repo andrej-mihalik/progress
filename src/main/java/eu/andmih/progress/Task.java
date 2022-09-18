@@ -1,14 +1,15 @@
 package eu.andmih.progress;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.util.Objects;
 
-@Entity
+@Document(collection = "tasks")
 public class Task {
 
-    private @Id @GeneratedValue Long id;
+    @Id
+    private String id;
     private String objective;
     private Double reward;
 

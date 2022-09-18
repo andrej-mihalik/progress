@@ -15,7 +15,7 @@ public class TaskLoader implements CommandLineRunner {
     }
 
     public void run(String... strings) throws Exception {
-        this.repository.save(new Task("take out the trash", 1.0));
-        this.repository.save(new Task("world domination", 5.0));
+        //this.repository.save(new Task("take out the trash", 1.0));
+        //this.repository.save(new Task("world domination", 5.0));
     }
 }
