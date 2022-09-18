@@ -1,4 +1,6 @@
 package eu.andmih.progress;
 
-public class TaskRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface TaskRepository extends CrudRepository<Task, Long> {
 }
