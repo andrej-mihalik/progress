@@ -9,6 +9,6 @@ import java.util.List;
 @RepositoryRestResource(collectionResourceRel = "tasks", path = "tasks")
 public interface TaskRepository extends MongoRepository<Task, String> {
 
-    List<Task> findById(@Param("id") String id);
+
 
 }
